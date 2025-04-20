@@ -18,7 +18,7 @@ const Index = () => {
           <Button variant="ghost" className="text-white/80 hover:text-white">
             Аккаунт
           </Button>
-          <Button variant="outline" className="text-white border-white/20">
+          <Button variant="outline" className="bg-white text-black hover:bg-white/90 border-white">
             Проекты
           </Button>
         </div>
