@@ -1,6 +1,7 @@
 import { Play, UserRoundPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -14,10 +15,12 @@ const Index = () => {
           <a href="#" className="text-white/80 hover:text-white">РЕСУРСЫ</a>
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="outline" className="bg-white text-black hover:bg-white/90 border-white">
-            <UserRoundPlus className="mr-2 h-4 w-4" />
-            Регистрация
-          </Button>
+          <Link to="/register">
+            <Button variant="outline" className="bg-white text-black hover:bg-white/90 border-white">
+              <UserRoundPlus className="mr-2 h-4 w-4" />
+              Регистрация
+            </Button>
+          </Link>
           <Button variant="outline" className="bg-white text-black hover:bg-white/90 border-white">
             Проекты
           </Button>
